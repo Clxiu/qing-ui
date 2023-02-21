@@ -4,10 +4,14 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TodoList from "./components/TodoList/TodoList";
+import Clock from "./components/Clock/Clock";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <TodoList />
+  <div>
+    <TodoList />
+    <Clock />
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function

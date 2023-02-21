@@ -1,0 +1,121 @@
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.clock-face {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20px auto;
+    background: radial-gradient(#fff, #e6e6e6);
+    box-shadow:
+    inset -10px -10px 30px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.2),
+    10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+    position: absolute;
+    top: 128px;
+    left: 140px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    transform-origin: center center;
+    transform: translate(-50%, -80%);
+}
+
+.one {
+    transform: rotate(-60deg) translate(128px) rotate(60deg);
+}
+.two {
+    transform: rotate(-30deg) translate(128px) rotate(30deg);
+}
+.three {
+    transform: rotate(0deg) translate(128px) rotate(0deg);
+}
+.four {
+    transform: rotate(30deg) translate(128px) rotate(-30deg);
+}
+.five {
+    transform: rotate(60deg) translate(128px) rotate(-60deg);
+}
+.six {
+    transform: rotate(90deg) translate(128px) rotate(-90deg);
+}
+.seven {
+    transform: rotate(120deg) translate(128px) rotate(-120deg);
+}
+.eight {
+    transform: rotate(150deg) translate(128px) rotate(-150deg);
+}
+.nine {
+    transform: rotate(180deg) translate(128px) rotate(-180deg);
+}
+.ten {
+    transform: rotate(210deg) translate(128px) rotate(-210deg);
+}
+.eleven {
+    transform: rotate(240deg) translate(128px) rotate(-240deg);
+}
+.twelve {
+    transform: rotate(270deg) translate(128px) rotate(-270deg);
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    transition: all 0.05s ease-in-out;
+}
+
+.hour-hand {
+    width: 6px;
+    height: 60px;
+    background-color: #333;
+    top: 90px;
+    left: 50%; 
+    border-radius: 5px 5px 0 0;
+    transform: rotate(0deg);
+}
+
+.minute-hand {
+    width: 4px;
+    height: 80px;
+    background-color: #333;
+    top: 70px;
+    left: 50%;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(0deg);
+}
+
+.second-hand {
+    width: 2px;
+    height: 90px;
+    background-color: #c11d1d;
+    top: 60px;
+    left: 50%;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(0deg);
+    z-index: 1;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.center-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 146px;
+    left: 146px;
+    z-index: 2;
+}

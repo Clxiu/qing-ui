@@ -1,11 +1,10 @@
 import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
-import TodoList from "./TodoList";
+import TodoList from "./components/TodoList/TodoList";
 
 describe("TodoList", () => {
   it("adds a new task when the add button is clicked", () => {
     render(<TodoList />);
-
     // add a task to the list
     const input = screen.getByPlaceholderText("Add a new task");
     const addButton = screen.getByRole("button", { name: "Add" });
@@ -18,7 +17,6 @@ describe("TodoList", () => {
 
   it("removes a task when the remove button is clicked", () => {
     render(<TodoList />);
-
     // add a task to the list
     const input = screen.getByPlaceholderText("Add a new task");
     const addButton = screen.getByRole("button", { name: "Add" });
@@ -35,7 +33,6 @@ describe("TodoList", () => {
 
   it("toggles a task's completed status when the checkbox is clicked", () => {
     render(<TodoList />);
-
     // add a task to the list
     const input = screen.getByPlaceholderText("Add a new task");
     const addButton = screen.getByRole("button", { name: "Add" });
@@ -80,7 +77,6 @@ describe("TodoList", () => {
 
   it("should mark a task as completed when clicked", () => {
     render(<TodoList />);
-
     // add a task to the list
     const input = screen.getByPlaceholderText("Add a new task");
     const addButton = screen.getByRole("button", { name: "Add" });
