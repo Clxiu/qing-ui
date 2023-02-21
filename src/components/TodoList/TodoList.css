@@ -1,0 +1,56 @@
+.todo-list {
+    margin: auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+button[type="submit"] {
+    margin-left: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem
+}
+
+.error-message {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 0.5rem;
+}
