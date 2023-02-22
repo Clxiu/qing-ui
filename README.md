@@ -1,5 +1,5 @@
 # Qing-UI
-Qing-UI is a collection of React components for building user interfaces. It provides a set of customizable and reusable UI components that can be used to build web applications.
+Qing-UI is a collection of React components for building user interfaces. It provides a set of customizable and reusable UI components that can be used to build web applications. This UI library contains commonly used components, such as buttons, clocks, todo lists. 
 
 ## Features
 Simple and easy-to-use API
