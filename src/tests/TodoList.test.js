@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
-import TodoList from "./components/TodoList/TodoList";
+import TodoList from "../components/TodoList/TodoList";
 
 describe("TodoList", () => {
   it("adds a new task when the add button is clicked", () => {
