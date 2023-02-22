@@ -8,11 +8,11 @@ Responsive design
 Supports theme customization
 ## Installation
 Install via npm:
-npm install qing-ui
+```npm install qing-ui```
 ## Usage
 Global Import
 Add the following code in your index.js file:
-
+```
 import React from 'react'
 import ReactDOM from 'react-dom'
 import QingUI from 'qing-ui'
@@ -24,11 +24,12 @@ ReactDOM.render(
   </QingUI>,
   document.getElementById('root')
 )
+```
 Now, you can use Qing UI components in your React application.
 
 ## Local Import
 In your component file, import only the component(s) you need:
-
+```
 import { Button } from 'qing-ui'
 
 function MyComponent() {
@@ -38,6 +39,7 @@ function MyComponent() {
     </div>
   )
 }
+```
 ## Documentation
 For more information on components and API usage, please refer to the official documentation.
 
