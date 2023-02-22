@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+
+import Button from './components/Button/Button';
 import TodoList from "./components/TodoList/TodoList";
 import Clock from "./components/Clock/Clock";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
+    <Button text="Click me!" />
+    <br/><br/>
+    <Button className="btn primary" type="primary" text="Click me!" onClick={alert} />
+    <br/><br/>
+    <Button className="btn primary" type="primary" text="You can't click me!" disabled={"true"} />
+    <br/><br/>
+    <Button className="btn danger" type="danger" text="Click me!" onClick={alert} />
+    <br/><br/>
+    <Button className="btn danger" type="danger" text="You can't click me!" disabled={"true"} />
+
     <TodoList />
     <Clock />
   </div>
