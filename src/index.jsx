@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
-import Button from './components/Button/Button';
-import TodoList from "./components/TodoList/TodoList";
-import Clock from "./components/Clock/Clock";
+import Button from './components/Button/Button.jsx';
+import TodoList from "./components/TodoList/TodoList.jsx";
+import Clock from "./components/Clock/Clock.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
